@@ -27,7 +27,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "blackcube/yii-bridge-model": "^1.0",
+        "blackcube/yii-bridge-model": "@dev",
         "psr/http-message": "^2.0",
         "yiisoft/aliases": "^3.1",
         "yiisoft/data": "^2.0",
@@ -40,7 +40,7 @@
         "yiisoft/widget": "^2.2"
     },
     "require-dev": {
-        "blackcube/active-record": "^1.0",
+        "blackcube/active-record": "@dev",
         "codeception/codeception": "^5.3",
         "codeception/module-asserts": "^3.3",
         "codeception/module-db": "^3.2",
