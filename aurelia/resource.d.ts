@@ -1,0 +1,22 @@
+declare module '*.html' {
+    import { IContainer, PartialBindableDefinition } from 'aurelia';
+    export const name: string;
+    export const template: string;
+    export default template;
+    export const dependencies: string[];
+    export const containerless: boolean | undefined;
+    export const bindables: Record<string, PartialBindableDefinition>;
+    export const shadowOptions: { mode: 'open' | 'closed' } | undefined;
+    export function register(container: IContainer);
+}
+
+declare module '*.css';
+declare module '*.scss';
+
+// Extend resumablejs types - missing properties in official .d.ts
+declare module Resumable {
+    interface ConfigurationHash {
+        permanentErrors?: number[];
+        maxChunkRetries?: number;
+    }
+}

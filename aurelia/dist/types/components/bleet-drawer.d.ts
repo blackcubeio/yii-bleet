@@ -1,0 +1,40 @@
+import { IEventAggregator, ILogger, IPlatform } from 'aurelia';
+import { ITransitionService } from '../services/transition-service';
+import { ISvgService } from '../services/svg-service';
+import { IApiService } from '../services/api-service';
+export declare class BleetDrawer {
+    private readonly logger;
+    private readonly ea;
+    private readonly platform;
+    private readonly transitionService;
+    private readonly svgService;
+    private readonly apiService;
+    id: string;
+    private dialogElement;
+    private disposable?;
+    private loading;
+    private color;
+    private headerView;
+    private contentView;
+    private footerView;
+    private static readonly HEADER_BG_CLASSES;
+    private static readonly CLOSE_BUTTON_TEXT_CLASSES;
+    constructor(logger?: ILogger, ea?: IEventAggregator, platform?: IPlatform, transitionService?: ITransitionService, svgService?: ISvgService, apiService?: IApiService);
+    private get headerBgClass();
+    private get closeButtonTextClass();
+    attached(): void;
+    detached(): void;
+    private bindDialogEvents;
+    private unbindDialogEvents;
+    private onDrawerEvent;
+    private onCloseEvent;
+    private onCancelEvent;
+    private onDialogClick;
+    private onFormSubmit;
+    private loadFromUrl;
+    private applyResponse;
+    private executeActions;
+    private open;
+    private close;
+}
+//# sourceMappingURL=bleet-drawer.d.ts.map

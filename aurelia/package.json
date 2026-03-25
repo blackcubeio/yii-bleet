@@ -1,0 +1,43 @@
+{
+    "name": "@blackcube/aurelia2-bleet",
+    "version": "1.0.1",
+    "description": "Blackcube Aurelia 2 components for Bleet",
+    "author": "Gaultier Philippe <philippe@blackcube.io",
+    "license": "BSD-3-Clause",
+    "type": "module",
+    "module": "./dist/index.es.js",
+    "main": "./dist/index.js",
+    "types": "./dist/types/index.d.ts",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^12.3.0",
+        "@types/node": "^22.10.2",
+        "rimraf": "^6.1.2",
+        "rollup": "^4.53.3",
+        "socket.io-client": "^4.8.1",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3"
+    },
+    "peerDependencies": {
+        "aurelia": "^2.0.0-rc.0",
+        "quill": "^2.0.3",
+        "resumablejs": "^1.1.0",
+        "socket.io-client": "^4.8.1"
+    },
+    "peerDependenciesMeta": {
+        "resumablejs": {
+            "optional": false
+        },
+        "quill": {
+            "optional": false
+        },
+        "socket.io-client": {
+            "optional": true
+        }
+    },
+    "scripts": {
+        "clean": "rimraf ./dist",
+        "build": "rollup -c",
+        "prebuild": "npm run clean && tsc --emitDeclarationOnly",
+        "build:watch": "rollup -cw"
+    }
+}

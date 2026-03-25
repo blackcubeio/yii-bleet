@@ -1,0 +1,46 @@
+import { IEventAggregator, ILogger, IPlatform } from 'aurelia';
+import { ITransitionService } from '../services/transition-service';
+import { ISvgService } from '../services/svg-service';
+import { IApiService } from '../services/api-service';
+export declare class BleetModal {
+    private readonly logger;
+    private readonly ea;
+    private readonly platform;
+    private readonly transitionService;
+    private readonly svgService;
+    private readonly apiService;
+    id: string;
+    private dialogElement;
+    private disposable?;
+    private loading;
+    private color;
+    private icon;
+    private headerView;
+    private contentView;
+    private footerView;
+    private static readonly ICON_BG_CLASSES;
+    private static readonly ICON_TEXT_CLASSES;
+    private static readonly HEADER_BG_CLASSES;
+    private static readonly CLOSE_BUTTON_TEXT_CLASSES;
+    constructor(logger?: ILogger, ea?: IEventAggregator, platform?: IPlatform, transitionService?: ITransitionService, svgService?: ISvgService, apiService?: IApiService);
+    private get iconSvg();
+    private get iconBgClass();
+    private get iconTextClass();
+    private get headerBgClass();
+    private get closeButtonTextClass();
+    attached(): void;
+    detached(): void;
+    private bindDialogEvents;
+    private unbindDialogEvents;
+    private onModalEvent;
+    private onCloseEvent;
+    private onCancelEvent;
+    private onDialogClick;
+    private onFormSubmit;
+    private loadFromUrl;
+    private applyResponse;
+    private executeActions;
+    private open;
+    private close;
+}
+//# sourceMappingURL=bleet-modal.d.ts.map

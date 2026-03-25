@@ -1,0 +1,1 @@
+{"version":3,"file":"csrf-codec.d.ts","sourceRoot":"","sources":["../../../src/codecs/csrf-codec.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAgB,MAAM,mBAAmB,CAAC;AACzD,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC;AAE1C,qBAAa,SAAS;IAElB,OAAc,KAAK,EAAE,MAAM,CAezB;WAEY,UAAU,CAAC,MAAM,EAAE,UAAU,GAAG,MAAM;CAkBvD"}
