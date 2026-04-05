@@ -1,0 +1,3 @@
+declare const _default: "<template class=\"fixed top-4 right-0 z-70 pr-4 flex flex-col gap-4 pointer-events-none\">\n    <bleet-toast repeat.for=\"[id, toast] of toasts\"\n                class=\"w-90 max-w-full translate-x-full opacity-0 transition-all duration-500 ease-in-out pointer-events-auto\"\n        id.bind=\"id\"\n                 color.bind=\"toast.color\"\n                 icon.bind=\"toast.icon\"\n                 title.bind=\"toast.title\"\n                 content.bind=\"toast.content\"\n                 duration.bind=\"toast.duration\"\n    ></bleet-toast>\n</template>";
+export default _default;
+//# sourceMappingURL=bleet-toaster.html.d.ts.map

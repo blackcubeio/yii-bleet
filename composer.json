@@ -1,0 +1,85 @@
+{
+    "name": "blackcube/yii-bleet",
+    "description": "Blackcube UIKit for Yii framework",
+    "keywords": [
+        "yii",
+        "uikit",
+        "widgets",
+        "form-helpers",
+        "ui-components",
+        "aurelia2"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/blackcubeio/yii-bleet",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/blackcubeio/yii-bleet/issues",
+        "source": "https://github.com/blackcubeio/yii-bleet"
+    },
+    "readme": "README.md",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "blackcube/yii-bridge-model": "^1.0",
+        "psr/http-message": "^2.0",
+        "yiisoft/aliases": "^3.1",
+        "yiisoft/data": "^2.0",
+        "yiisoft/data-response": "^2.2",
+        "yiisoft/form-model": "^1.1",
+        "yiisoft/html": "^4.0",
+        "yiisoft/http": "^1.3",
+        "yiisoft/json": "^1.1",
+        "yiisoft/router": "^4.0",
+        "yiisoft/widget": "^2.2"
+    },
+    "require-dev": {
+        "blackcube/active-record": "^1.0",
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.3",
+        "codeception/module-db": "^3.2",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "swaggest/json-schema": "^0.12.43",
+        "vlucas/phpdotenv": "^5.6",
+        "yiisoft/active-record": "^1.0",
+        "yiisoft/cache": "^3.2",
+        "yiisoft/config": "^1.6",
+        "yiisoft/db": "^2.0",
+        "yiisoft/db-migration": "^2.0",
+        "yiisoft/db-mysql": "^2.0",
+        "yiisoft/definitions": "^3.4",
+        "yiisoft/dummy-provider": "^1.1",
+        "yiisoft/event-dispatcher": "^1.1",
+        "yiisoft/test-support": "^3.2"
+    },
+    "suggest": {
+        "blackcube/fileprovider": "FileProvider component for file upload"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\Bleet\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\Bleet\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "yiisoft/config": true
+        }
+    }
+}
