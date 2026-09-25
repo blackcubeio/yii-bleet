@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "lib": ["es2022", "DOM"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "types": [
+      "aurelia",
+      "node"
+    ],
+    "declarationDir": "./dist/types",
+  },
+  "files": [
+    "resource.d.ts"
+  ],
+    "include": [
+        "src"
+    ],
+  "exclude": [
+    "node_modules"
+  ]
+}
